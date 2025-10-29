@@ -24,11 +24,11 @@ async function loadShader(url) {
   return await res.text();
 }
 
-const vertexShader = await loadShader('/vertex.glsl');
-const fragmentShader = await loadShader('/fragment.glsl');
+const vertexShader = await loadShader('./vertex.glsl');
+const fragmentShader = await loadShader('./fragment.glsl');
 
-const EmptyVertex = await loadShader('/EmptyVertex.glsl');
-const EncodeData = await loadShader('/EncodeData.glsl');
+const EmptyVertex = await loadShader('./EmptyVertex.glsl');
+const EncodeData = await loadShader('./EncodeData.glsl');
 
 
 const scene = new THREE.Scene();
